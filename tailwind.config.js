@@ -149,6 +149,9 @@ module.exports = {
       "48": "12rem",
       "56": "14rem",
       "64": "16rem",
+      "96": "24rem",
+      "104": "26rem",
+      "100px": "100px"
     },
     backgroundColor: (theme) => theme("colors"),
     backgroundOpacity: (theme) => theme("opacity"),
@@ -293,6 +296,8 @@ module.exports = {
     inset: {
       "0": "0",
       auto: "auto",
+      "60": "60px",
+      "80": "80px"
     },
     letterSpacing: {
       tighter: "-0.05em",

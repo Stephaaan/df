@@ -1,16 +1,24 @@
 <template>
-  <div class="w-full h-20 flex justify-between items-center font-poppins">
+  <div class="w-full h-20 flex justify-between items-center font-poppins z-50 absolute bg-white">
     <!-- LOGO -->
     <div class="mx-5 flex flex-col justify-center items-center">
       <img class="h-16 font-poppins" src="../assets/logo.svg" />
     </div>
     <!-- DESKTOP MENU -->
     <div class="hidden md:flex">
-      <a
-        class="mx-10 cursor-pointer"
-        v-for="menuItem in menu"
-        :key="menuItem.link"
-      >{{$t(menuItem.translation)}}</a>
+      <ul id="menu" class="flex flex-row">
+        <li v-for="(menuItem, index) in menu"
+            :key="menuItem.link"
+
+        >
+          <a
+                  class="mx-10 cursor-pointer"
+                  :href="'#page'+(index + 1)"
+          >{{$t(menuItem.translation)}}</a>
+        </li>
+
+      </ul>
+
       <LanguagePicker />
     </div>
     <!-- MOBILE MENU -->
@@ -21,11 +29,18 @@
       <Drawer @close="toggle()" align="right" :closeable="true">
         <div v-if="drawer.isOpen">
           <div class="flex flex-col text-lg">
-            <a
-              class="mx-10 my-2 cursor-pointer"
-              v-for="menuItem in menu"
-              :key="menuItem.link"
-            >{{$t(menuItem.translation)}}</a>
+            <ul id="menu">
+              <li v-for="(menuItem, index) in menu"
+                  :key="menuItem.link"
+
+              >
+                <a
+                        class="mx-10 my-2 cursor-pointer"
+                        :href="'#page'+(index + 1)"
+                >{{$t(menuItem.translation)}}</a>
+              </li>
+
+            </ul>
             <LanguagePicker />
           </div>
         </div>

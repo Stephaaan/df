@@ -12,6 +12,7 @@
     "postcss": "^7.0.32",
     "tailwindcss": "^1.4.6",
     "vue": "^2.6.11",
+    "vue-fullpage.js": "^0.1.5",
     "vue-i18n": "^8.18.2",
     "vue-simple-drawer": "^1.0.6"
   },

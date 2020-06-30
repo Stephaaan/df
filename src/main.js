@@ -4,9 +4,12 @@ import "./main.css";
 import VueI18n from "vue-i18n";
 import sk from "./i18n/sk";
 import en from "./i18n/en";
+import VueFullPage from 'vue-fullpage.js'
+
 
 Vue.config.productionTip = false;
 Vue.use(VueI18n);
+Vue.use(VueFullPage);
 
 const messages = {
   en,
