@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-20 flex justify-between items-center font-poppins z-50 absolute bg-white">
+  <div class="w-full h-20 flex justify-between items-center font-poppins z-50 absolute bg-white ">
     <!-- LOGO -->
     <div class="mx-5 flex flex-col justify-center items-center">
       <img class="h-16 font-poppins" src="../assets/logo.svg" />
@@ -12,7 +12,7 @@
 
         >
           <a
-                  class="mx-10 cursor-pointer"
+                  class="mx-5 lg:mx-10 cursor-pointer text-sm xl:text-lg"
                   :href="'#page'+(index + 1)"
           >{{$t(menuItem.translation)}}</a>
         </li>
