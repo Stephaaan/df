@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "postcss": "^7.0.32",
+    "postcss": "^7.0.36",
     "tailwindcss": "^1.4.6",
     "vue": "^2.6.11",
     "vue-i18n": "^8.18.2",
